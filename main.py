@@ -2,7 +2,6 @@ import telebot
 from config import TOKEN
 import random
 
-# a = eval('(1+2)*3')
 
 bot = telebot.TeleBot(TOKEN)
 
