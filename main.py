@@ -64,7 +64,7 @@ def welcome(message):
 
     item1 = telebot.types.KeyboardButton('Случайное число')
     item2 = telebot.types.KeyboardButton('Кинуть кость')
-    item3 = telebot.types.KeyboardButton('Кодироват текст')
+    item3 = telebot.types.KeyboardButton('Кодировать текст')
     item4 = telebot.types.KeyboardButton('Декодировать текст')
     item5 = telebot.types.KeyboardButton('Калькулятор')
 
@@ -83,7 +83,7 @@ def send_text(message):
         bot.send_message(message.chat.id, kosti[(random.randint(0, 5))])
 
 
-    elif message.text == 'Кодироват текст':
+    elif message.text == 'Кодировать текст':
         bot.send_message(message.chat.id, 'Введите текст для кодироки в формате kod*<текст>')
     elif message.text[0:4] == 'kod*':
         bot.send_message(message.chat.id, f'Закодированный текст: {compress(message.text[4:])}')
