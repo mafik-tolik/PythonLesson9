@@ -64,9 +64,9 @@ def welcome(message):
 
     item1 = telebot.types.KeyboardButton('Случайное число')
     item2 = telebot.types.KeyboardButton('Кинуть кость')
-    item3 = telebot.types.KeyboardButton('Кодировать текст')
-    item4 = telebot.types.KeyboardButton('Декодировать текст')
-    item5 = telebot.types.KeyboardButton('Калькулятор')
+    item3 = telebot.types.KeyboardButton('Калькулятор')
+    item4 = telebot.types.KeyboardButton('Кодировать текст')
+    item5 = telebot.types.KeyboardButton('Декодировать текст')
 
     markup.add(item1, item2, item3, item4, item5)
 
